@@ -558,11 +558,11 @@ strong {
 .custom-block {
   border-radius: var(--border-radius-medium);
   position: relative;
-  overflow: hidden;
+  overflow:visible;
   padding: 10px;
   transition: all 0.3s ease;
   min-height: 350px;
-  height: 50%;
+  height: 100%;
 }
 
 .custom-block:hover {
@@ -586,7 +586,7 @@ strong {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   margin-top: 35px;
 }
 
@@ -682,6 +682,7 @@ strong {
 .topics-detail-block-image {
   display: block;
   border-radius: var(--border-radius-medium);
+  
 }
 
 blockquote {
@@ -756,7 +757,9 @@ blockquote {
   TIMELINE              
 -----------------------------------------*/
 .timeline-section {
-  background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');
+  /*background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');*/
+  background-color: var(--secondary-color);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
